@@ -162,6 +162,7 @@
     <EnumValue value="Verdana"/>
     <EnumValue value="Arial"/>
     <EnumValue value="Courier New"/>
+    <EnumValue value="Roboto"/>
   </UserPref>
   <UserPref name="showWeeks" display_name="Show Weeks" datatype="bool" default_value="true"/>
   <UserPref name="showDays" display_name="Show Days" datatype="bool" default_value="true"/>
@@ -190,7 +191,7 @@ div h1, div h2 {
 
 div h2 {
     font-size: .75em;
-    color: red;
+    color: black;
 }
 
 </style>
@@ -244,6 +245,18 @@ function init() {
     {
         document.getElementById('week').style.display = 'none';
     } 
+    if (!__UP_showDays__) {
+        document.getElementById('day').style.display = 'none';
+    }
+    if (!__UP_showHours__) {
+        document.getElementById('hour').style.display = 'none';
+    }
+    if (!__UP_showMinutes__) {
+        document.getElementById('minute').style.display = 'none';
+    }
+    if (!__UP_showSeconds__) {
+        document.getElementById('second').style.display = 'none';
+    }
 
     dayNum = document.getElementById('day').getElementsByTagName('h1')[0]; 
     dayTitle = document.getElementById('day').getElementsByTagName('h2')[0]; 
