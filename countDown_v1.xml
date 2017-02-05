@@ -240,7 +240,7 @@ function init() {
     if (window.addEventListener) window.addEventListener('resize', handle_resize, false);
     weekNum = document.getElementById('week').getElementsByTagName('h1')[0];
     weekTitle = document.getElementById('week').getElementsByTagName('h2')[0];
-    if(__UP_showWeeks__ == false)
+    if(!__UP_showWeeks__)
     {
         document.getElementById('week').style.display = 'none';
     } 
@@ -262,7 +262,7 @@ function init() {
 function update_countdown() {
     remainingSeconds -= .25;
     var tmpSeconds = remainingSeconds;
-    if(__UP_showWeeks__ == true);
+    if(__UP_showWeeks__)
 
     {
         remainingWeeks = Math.max(0, Math.floor(tmpSeconds / (86400 * 7)));
@@ -271,7 +271,15 @@ function update_countdown() {
         weekTitle .innerHTML = remainingWeeks == 1 ? 'Week' : 'Weeks';
     }
 
-    remainingDays = Math.max(0, Math.floor(tmpSeconds / 86400)); tmpSeconds -= remainingDays * 86400; dayNum.innerHTML = remainingDays; dayTitle.innerHTML = remainingDays == 1 ? 'Day' : 'Days' remainingHours = Math.max(0, Math.floor(tmpSeconds / 3600)); tmpSeconds -= remainingHours * 3600; hourNum.innerHTML = remainingHours; hourTitle.innerHTML = remainingHours == 1 ? 'Hour' : 'Hours' remainingMinutes = Math.max(0, Math.floor(tmpSeconds / 60)); tmpSeconds -= remainingMinutes * 60; minuteNum.innerHTML = remainingMinutes; minuteTitle.innerHTML = remainingMinutes == 1 ? 'Minute' : 'Minutes' tmpSeconds = Math.max(0, Math.floor(tmpSeconds)); secondNum.innerHTML = tmpSeconds; secondTitle.innerHTML = tmpSeconds == 1 ? 'Second' : 'Seconds' if(Math.floor(tmpSeconds) % 5 == 0) {
+    remainingDays = Math.max(0, Math.floor(tmpSeconds / 86400)); 
+    tmpSeconds -= remainingDays * 86400; dayNum.innerHTML = remainingDays; 
+    dayTitle.innerHTML = remainingDays == 1 ? 'Day' : 'Days' remainingHours = Math.max(0, Math.floor(tmpSeconds / 3600)); 
+    tmpSeconds -= remainingHours * 3600; hourNum.innerHTML = remainingHours; 
+    hourTitle.innerHTML = remainingHours == 1 ? 'Hour' : 'Hours' remainingMinutes = Math.max(0, Math.floor(tmpSeconds / 60)); 
+    tmpSeconds -= remainingMinutes * 60; minuteNum.innerHTML = remainingMinutes; 
+    minuteTitle.innerHTML = remainingMinutes == 1 ? 'Minute' : 'Minutes' tmpSeconds = Math.max(0, Math.floor(tmpSeconds)); 
+    secondNum.innerHTML = tmpSeconds; secondTitle.innerHTML = tmpSeconds == 1 ? 'Second' : 'Seconds'; 
+    if(Math.floor(tmpSeconds) % 5 == 0) {
         eventDate = new Date(eventYear, eventMonth, eventDay, eventHour, eventMinute, 0);
         nowDate = new Date();
         remainingSeconds = Math.ceil((eventDate.getTime() - nowDate.getTime()) / 1000);
