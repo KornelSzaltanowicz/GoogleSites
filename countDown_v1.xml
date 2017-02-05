@@ -272,13 +272,17 @@ function update_countdown() {
     }
 
     remainingDays = Math.max(0, Math.floor(tmpSeconds / 86400)); 
-    tmpSeconds -= remainingDays * 86400; dayNum.innerHTML = remainingDays; 
+    tmpSeconds -= remainingDays * 86400; 
+    dayNum.innerHTML = remainingDays; 
     dayTitle.innerHTML = remainingDays == 1 ? 'Day' : 'Days';
     remainingHours = Math.max(0, Math.floor(tmpSeconds / 3600)); 
-    tmpSeconds -= remainingHours * 3600; hourNum.innerHTML = remainingHours; 
-    hourTitle.innerHTML = remainingHours == 1 ? 'Hour' : 'Hours' remainingMinutes = Math.max(0, Math.floor(tmpSeconds / 60)); 
+    tmpSeconds -= remainingHours * 3600; 
+    hourNum.innerHTML = remainingHours; 
+    hourTitle.innerHTML = remainingHours == 1 ? 'Hour' : 'Hours';
+    remainingMinutes = Math.max(0, Math.floor(tmpSeconds / 60)); 
     tmpSeconds -= remainingMinutes * 60; minuteNum.innerHTML = remainingMinutes; 
-    minuteTitle.innerHTML = remainingMinutes == 1 ? 'Minute' : 'Minutes' tmpSeconds = Math.max(0, Math.floor(tmpSeconds)); 
+    minuteTitle.innerHTML = remainingMinutes == 1 ? 'Minute' : 'Minutes';
+    tmpSeconds = Math.max(0, Math.floor(tmpSeconds)); 
     secondNum.innerHTML = tmpSeconds; secondTitle.innerHTML = tmpSeconds == 1 ? 'Second' : 'Seconds'; 
     if(Math.floor(tmpSeconds) % 5 == 0) {
         eventDate = new Date(eventYear, eventMonth, eventDay, eventHour, eventMinute, 0);
