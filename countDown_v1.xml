@@ -339,28 +339,7 @@ function update_countdown() {
   </div>
 </div>
 
-<div id="secondCountdown">
-  <div id="week">
-      <h1>5</h1>
-      <h2>Weeks</h2>
-  </div> 
-  <div id="day">
-      <h1>5</h1>
-      <h2>Days</h2>
-  </div> 
-  <div id="hour">
-      <h1>5</h1>
-      <h2>Hours</h2>
-  </div> 
-  <div id="minute">
-      <h1>5</h1>
-      <h2>Minutes</h2>
-  </div> 
-  <div id="second">
-      <h1>5</h1>
-      <h2>Seconds</h2>
-  </div>
-</div>
+
 <script type="text/javascript">init()</script>
 
 ]]>
