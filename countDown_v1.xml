@@ -173,27 +173,35 @@
     <![CDATA[
 
 <style>
-div {
-    float: left;
-    text-align: center;
-    width: 20%;
+
+#firstCountdown {
+  foat: left:
+  div {
+      float: left;
+      text-align: center;
+      width: 20%;
+  }
+
+  div h1, div h2 {
+      font-family: __UP_font__;
+      font-size: 2em;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      color: black;
+  }
+
+  div h2 {
+      font-size: .75em;
+      color: black;
+  }
 }
 
-div h1, div h2 {
-    font-family: __UP_font__;
-    font-size: 2em;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    color: black;
+#secondCountdown {
+  float: right:
+  margin: 20px;
 }
-
-div h2 {
-    font-size: .75em;
-    color: black;
-}
-
 </style>
 
 <script type="text/javascript">
