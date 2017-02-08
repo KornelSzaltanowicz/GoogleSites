@@ -413,23 +413,34 @@
 	
 	div h1, div h2 {
 		font-family: Crimson;
-		font-size: 2em;
 		text-align: center;
 		margin: 0;
 		padding: 0;
     color: #993366;
 	}
 
+  div h1 {
+  font-size: 1.5em;
+  }
+
   .eventer {
 		padding-top:15px;
     color: #019DCD;
     font-size: 9pt;
     font-family: Arial;
-    margin-right: 20px;
+    margin-right: 5px;
 	}
+
   #first-counter  {
+  display: inline-block;
     float: left;
     margin-right: 20px;
+  }
+
+  #second-counter {
+  display: inline-block;
+    float: right;
+    margin-left: 20px;
   }
 	
 	div h2 {
@@ -441,7 +452,6 @@
 }
 
 .center-margin{
-  width: 100%;
   margin: auto;  
 }
 .container {
