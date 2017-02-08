@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+
+<ModulePrefs title="Countdown to __UP_event__" height="200" />
+<UserPref name="event" display_name="Event" required="true"/>
+<UserPref name="event_year" required="true" display_name="Year" datatype="enum">
+  <EnumValue value="2009" display_value="2009"/>
+  <EnumValue value="2010" display_value="2010"/>
+  <EnumValue value="2011" display_value="2011"/>
+  <EnumValue value="2012" display_value="2012"/>
+  <EnumValue value="2013" display_value="2013"/>
+  <EnumValue value="2014" display_value="2014"/>
+  <EnumValue value="2015" display_value="2015"/>
+  <EnumValue value="2016" display_value="2016"/>
+  <EnumValue value="2017" display_value="2017"/>
+  <EnumValue value="2018" display_value="2018"/>
+  <EnumValue value="2019" display_value="2019"/>
+  <EnumValue value="2020" display_value="2020"/>
+  <EnumValue value="2021" display_value="2021"/>
+  <EnumValue value="2022" display_value="2022"/>
+  <EnumValue value="2023" display_value="2023"/>
+  <EnumValue value="2024" display_value="2024"/>
+  <EnumValue value="2026" display_value="2026"/>
+  <EnumValue value="2027" display_value="2027"/>
+  <EnumValue value="2028" display_value="2028"/>
+  <EnumValue value="2029" display_value="2029"/>
+  <EnumValue value="2030" display_value="2030"/>
+  <EnumValue value="2031" display_value="2031"/>
+  <EnumValue value="2032" display_value="2032"/>
+  <EnumValue value="2033" display_value="2033"/>
+  <EnumValue value="2034" display_value="2034"/>
+  <EnumValue value="2035" display_value="2035"/>
+  <EnumValue value="2036" display_value="2036"/>
+  <EnumValue value="2037" display_value="2037"/>
+  <EnumValue value="2038" display_value="2038"/>
+  <EnumValue value="2039" display_value="2039"/>
+  <EnumValue value="2040" display_value="2040"/>
+  <EnumValue value="2041" display_value="2041"/>
+  <EnumValue value="2042" display_value="2042"/>
+  <EnumValue value="2043" display_value="2043"/>
+  <EnumValue value="2044" display_value="2044"/>
+  <EnumValue value="2045" display_value="2045"/>
+  <EnumValue value="2046" display_value="2046"/>
+  <EnumValue value="2047" display_value="2047"/>
+  <EnumValue value="2048" display_value="2048"/>
+  <EnumValue value="2049" display_value="2049"/>
+  <EnumValue value="2050" display_value="2050"/>
+</UserPref>
+
+<UserPref name="event_month" required="true" display_name="Month" datatype="enum">
+  <EnumValue value="0" display_value="January"/>
+  <EnumValue value="1" display_value="February"/>
+  <EnumValue value="2" display_value="March"/>
+  <EnumValue value="3" display_value="April"/>
+  <EnumValue value="4" display_value="May"/>
+  <EnumValue value="5" display_value="June"/>
+  <EnumValue value="6" display_value="July"/>
+  <EnumValue value="7" display_value="August"/>
+
+  <EnumValue value="8" display_value="September"/>
+  <EnumValue value="9" display_value="October"/>
+  <EnumValue value="10" display_value="November"/>
+  <EnumValue value="11" display_value="December"/>
+</UserPref>
+<UserPref name="event_day" required="true" display_name="Day" datatype="enum">
+  <EnumValue value="1"/>
+  <EnumValue value="2"/>
+  <EnumValue value="3"/>
+  <EnumValue value="4"/>
+
+  <EnumValue value="5"/>
+  <EnumValue value="6"/>
+  <EnumValue value="7"/>
+  <EnumValue value="8"/>
+  <EnumValue value="9"/>
+  <EnumValue value="10"/>
+  <EnumValue value="11"/>
+  <EnumValue value="12"/>
+  <EnumValue value="13"/>
+
+  <EnumValue value="14"/>
+  <EnumValue value="15"/>
+  <EnumValue value="16"/>
+  <EnumValue value="17"/>
+  <EnumValue value="18"/>
+  <EnumValue value="19"/>
+  <EnumValue value="20"/>
+  <EnumValue value="21"/>
+  <EnumValue value="22"/>
+
+  <EnumValue value="23"/>
+  <EnumValue value="24"/>
+  <EnumValue value="25"/>
+  <EnumValue value="26"/>
+  <EnumValue value="27"/>
+  <EnumValue value="28"/>
+  <EnumValue value="29"/>
+  <EnumValue value="30"/>
+  <EnumValue value="31"/>
+
+</UserPref>
+<UserPref name="event_hour" required="true" display_name="Hour" datatype="enum">
+  <EnumValue value="0" display_value="12 a.m."/>
+  <EnumValue value="1" display_value="1 a.m."/>
+  <EnumValue value="2" display_value="2 a.m."/>
+  <EnumValue value="3" display_value="3 a.m."/>
+  <EnumValue value="4" display_value="4 a.m."/>
+  <EnumValue value="5" display_value="5 a.m."/>
+  <EnumValue value="6" display_value="6 a.m."/>
+  <EnumValue value="7" display_value="7 a.m."/>
+
+  <EnumValue value="8" display_value="8 a.m."/>
+  <EnumValue value="9" display_value="9 a.m."/>
+  <EnumValue value="10" display_value="10 a.m."/>
+  <EnumValue value="11" display_value="11 a.m."/>
+  <EnumValue value="12" display_value="12 p.m."/>
+  <EnumValue value="13" display_value="1 p.m."/>
+  <EnumValue value="14" display_value="2 p.m."/>
+  <EnumValue value="15" display_value="3 p.m."/>
+  <EnumValue value="16" display_value="4 p.m."/>
+
+  <EnumValue value="17" display_value="5 p.m."/>
+  <EnumValue value="18" display_value="6 p.m."/>
+  <EnumValue value="19" display_value="7 p.m."/>
+  <EnumValue value="20" display_value="8 p.m."/>
+  <EnumValue value="21" display_value="9 p.m."/>
+  <EnumValue value="22" display_value="10 p.m."/>
+  <EnumValue value="23" display_value="11 p.m."/>
+</UserPref>
+<UserPref name="event_minute" required="true" display_name="Minute" datatype="enum">
+  <EnumValue value="0"/>
+
+  <EnumValue value="1"/>
+  <EnumValue value="2"/>
+  <EnumValue value="3"/>
+  <EnumValue value="4"/>
+  <EnumValue value="5"/>
+  <EnumValue value="6"/>
+  <EnumValue value="7"/>
+  <EnumValue value="8"/>
+  <EnumValue value="9"/>
+
+  <EnumValue value="10"/>
+  <EnumValue value="11"/>
+  <EnumValue value="12"/>
+  <EnumValue value="13"/>
+  <EnumValue value="14"/>
+  <EnumValue value="15"/>
+  <EnumValue value="16"/>
+  <EnumValue value="17"/>
+  <EnumValue value="18"/>
+
+  <EnumValue value="19"/>
+  <EnumValue value="20"/>
+  <EnumValue value="21"/>
+  <EnumValue value="22"/>
+  <EnumValue value="23"/>
+  <EnumValue value="24"/>
+  <EnumValue value="25"/>
+  <EnumValue value="26"/>
+  <EnumValue value="27"/>
+
+  <EnumValue value="28"/>
+  <EnumValue value="29"/>
+  <EnumValue value="30"/>
+  <EnumValue value="31"/>
+  <EnumValue value="32"/>
+  <EnumValue value="33"/>
+  <EnumValue value="34"/>
+  <EnumValue value="35"/>
+  <EnumValue value="36"/>
+
+  <EnumValue value="37"/>
+  <EnumValue value="38"/>
+  <EnumValue value="39"/>
+  <EnumValue value="40"/>
+  <EnumValue value="41"/>
+  <EnumValue value="42"/>
+  <EnumValue value="43"/>
+  <EnumValue value="44"/>
+  <EnumValue value="45"/>
+
+  <EnumValue value="46"/>
+  <EnumValue value="47"/>
+  <EnumValue value="48"/>
+  <EnumValue value="49"/>
+  <EnumValue value="50"/>
+  <EnumValue value="51"/>
+  <EnumValue value="52"/>
+  <EnumValue value="53"/>
+  <EnumValue value="54"/>
+
+  <EnumValue value="55"/>
+  <EnumValue value="56"/>
+  <EnumValue value="57"/>
+  <EnumValue value="58"/>
+  <EnumValue value="59"/>
+</UserPref>
+
+
+<UserPref name="showMonths" display_name="Show months" datatype="bool" default_value="true"/>
+<UserPref name="showWeeks" display_name="Show weeks" datatype="bool" default_value="true"/>
+<UserPref name="showDays" display_name="Show days" datatype="bool" default_value="true"/>
+<UserPref name="showHours" display_name="Show hours" datatype="bool" default_value="true"/>
+<UserPref name="showMinutes" display_name="Show minutes" datatype="bool" default_value="true"/>
+<UserPref name="showSeconds" display_name="Show seconds" datatype="bool" default_value="true"/>
+
+<UserPref name="event2" display_name="Event" required="true"/>
+<UserPref name="event_year2" required="true" display_name="Year" datatype="enum">
+  <EnumValue value="2009" display_value="2009"/>
+  <EnumValue value="2010" display_value="2010"/>
+  <EnumValue value="2011" display_value="2011"/>
+  <EnumValue value="2012" display_value="2012"/>
+  <EnumValue value="2013" display_value="2013"/>
+  <EnumValue value="2014" display_value="2014"/>
+  <EnumValue value="2015" display_value="2015"/>
+  <EnumValue value="2016" display_value="2016"/>
+  <EnumValue value="2017" display_value="2017"/>
+  <EnumValue value="2018" display_value="2018"/>
+  <EnumValue value="2019" display_value="2019"/>
+  <EnumValue value="2020" display_value="2020"/>
+  <EnumValue value="2021" display_value="2021"/>
+  <EnumValue value="2022" display_value="2022"/>
+  <EnumValue value="2023" display_value="2023"/>
+  <EnumValue value="2024" display_value="2024"/>
+  <EnumValue value="2026" display_value="2026"/>
+  <EnumValue value="2027" display_value="2027"/>
+  <EnumValue value="2028" display_value="2028"/>
+  <EnumValue value="2029" display_value="2029"/>
+  <EnumValue value="2030" display_value="2030"/>
+  <EnumValue value="2031" display_value="2031"/>
+  <EnumValue value="2032" display_value="2032"/>
+  <EnumValue value="2033" display_value="2033"/>
+  <EnumValue value="2034" display_value="2034"/>
+  <EnumValue value="2035" display_value="2035"/>
+  <EnumValue value="2036" display_value="2036"/>
+  <EnumValue value="2037" display_value="2037"/>
+  <EnumValue value="2038" display_value="2038"/>
+  <EnumValue value="2039" display_value="2039"/>
+  <EnumValue value="2040" display_value="2040"/>
+  <EnumValue value="2041" display_value="2041"/>
+  <EnumValue value="2042" display_value="2042"/>
+  <EnumValue value="2043" display_value="2043"/>
+  <EnumValue value="2044" display_value="2044"/>
+  <EnumValue value="2045" display_value="2045"/>
+  <EnumValue value="2046" display_value="2046"/>
+  <EnumValue value="2047" display_value="2047"/>
+  <EnumValue value="2048" display_value="2048"/>
+  <EnumValue value="2049" display_value="2049"/>
+  <EnumValue value="2050" display_value="2050"/>
+</UserPref>
+
+<UserPref name="event_month2" required="true" display_name="Month" datatype="enum">
+  <EnumValue value="0" display_value="January"/>
+  <EnumValue value="1" display_value="February"/>
+  <EnumValue value="2" display_value="March"/>
+  <EnumValue value="3" display_value="April"/>
+  <EnumValue value="4" display_value="May"/>
+  <EnumValue value="5" display_value="June"/>
+  <EnumValue value="6" display_value="July"/>
+  <EnumValue value="7" display_value="August"/>
+
+  <EnumValue value="8" display_value="September"/>
+  <EnumValue value="9" display_value="October"/>
+  <EnumValue value="10" display_value="November"/>
+  <EnumValue value="11" display_value="December"/>
+</UserPref>
+<UserPref name="event_day2" required="true" display_name="Day" datatype="enum">
+  <EnumValue value="1"/>
+  <EnumValue value="2"/>
+  <EnumValue value="3"/>
+  <EnumValue value="4"/>
+
+  <EnumValue value="5"/>
+  <EnumValue value="6"/>
+  <EnumValue value="7"/>
+  <EnumValue value="8"/>
+  <EnumValue value="9"/>
+  <EnumValue value="10"/>
+  <EnumValue value="11"/>
+  <EnumValue value="12"/>
+  <EnumValue value="13"/>
+
+  <EnumValue value="14"/>
+  <EnumValue value="15"/>
+  <EnumValue value="16"/>
+  <EnumValue value="17"/>
+  <EnumValue value="18"/>
+  <EnumValue value="19"/>
+  <EnumValue value="20"/>
+  <EnumValue value="21"/>
+  <EnumValue value="22"/>
+
+  <EnumValue value="23"/>
+  <EnumValue value="24"/>
+  <EnumValue value="25"/>
+  <EnumValue value="26"/>
+  <EnumValue value="27"/>
+  <EnumValue value="28"/>
+  <EnumValue value="29"/>
+  <EnumValue value="30"/>
+  <EnumValue value="31"/>
+
+</UserPref>
+<UserPref name="event_hour2" required="true" display_name="Hour" datatype="enum">
+  <EnumValue value="0" display_value="12 a.m."/>
+  <EnumValue value="1" display_value="1 a.m."/>
+  <EnumValue value="2" display_value="2 a.m."/>
+  <EnumValue value="3" display_value="3 a.m."/>
+  <EnumValue value="4" display_value="4 a.m."/>
+  <EnumValue value="5" display_value="5 a.m."/>
+  <EnumValue value="6" display_value="6 a.m."/>
+  <EnumValue value="7" display_value="7 a.m."/>
+
+  <EnumValue value="8" display_value="8 a.m."/>
+  <EnumValue value="9" display_value="9 a.m."/>
+  <EnumValue value="10" display_value="10 a.m."/>
+  <EnumValue value="11" display_value="11 a.m."/>
+  <EnumValue value="12" display_value="12 p.m."/>
+  <EnumValue value="13" display_value="1 p.m."/>
+  <EnumValue value="14" display_value="2 p.m."/>
+  <EnumValue value="15" display_value="3 p.m."/>
+  <EnumValue value="16" display_value="4 p.m."/>
+
+  <EnumValue value="17" display_value="5 p.m."/>
+  <EnumValue value="18" display_value="6 p.m."/>
+  <EnumValue value="19" display_value="7 p.m."/>
+  <EnumValue value="20" display_value="8 p.m."/>
+  <EnumValue value="21" display_value="9 p.m."/>
+  <EnumValue value="22" display_value="10 p.m."/>
+  <EnumValue value="23" display_value="11 p.m."/>
+</UserPref>
+<UserPref name="event_minute2" required="true" display_name="Minute" datatype="enum">
+  <EnumValue value="0"/>
+
+  <EnumValue value="1"/>
+  <EnumValue value="2"/>
+  <EnumValue value="3"/>
+  <EnumValue value="4"/>
+  <EnumValue value="5"/>
+  <EnumValue value="6"/>
+  <EnumValue value="7"/>
+  <EnumValue value="8"/>
+  <EnumValue value="9"/>
+
+  <EnumValue value="10"/>
+  <EnumValue value="11"/>
+  <EnumValue value="12"/>
+  <EnumValue value="13"/>
+  <EnumValue value="14"/>
+  <EnumValue value="15"/>
+  <EnumValue value="16"/>
+  <EnumValue value="17"/>
+  <EnumValue value="18"/>
+
+  <EnumValue value="19"/>
+  <EnumValue value="20"/>
+  <EnumValue value="21"/>
+  <EnumValue value="22"/>
+  <EnumValue value="23"/>
+  <EnumValue value="24"/>
+  <EnumValue value="25"/>
+  <EnumValue value="26"/>
+  <EnumValue value="27"/>
+
+  <EnumValue value="28"/>
+  <EnumValue value="29"/>
+  <EnumValue value="30"/>
+  <EnumValue value="31"/>
+  <EnumValue value="32"/>
+  <EnumValue value="33"/>
+  <EnumValue value="34"/>
+  <EnumValue value="35"/>
+  <EnumValue value="36"/>
+
+  <EnumValue value="37"/>
+  <EnumValue value="38"/>
+  <EnumValue value="39"/>
+  <EnumValue value="40"/>
+  <EnumValue value="41"/>
+  <EnumValue value="42"/>
+  <EnumValue value="43"/>
+  <EnumValue value="44"/>
+  <EnumValue value="45"/>
+
+  <EnumValue value="46"/>
+  <EnumValue value="47"/>
+  <EnumValue value="48"/>
+  <EnumValue value="49"/>
+  <EnumValue value="50"/>
+  <EnumValue value="51"/>
+  <EnumValue value="52"/>
+  <EnumValue value="53"/>
+  <EnumValue value="54"/>
+
+  <EnumValue value="55"/>
+  <EnumValue value="56"/>
+  <EnumValue value="57"/>
+  <EnumValue value="58"/>
+  <EnumValue value="59"/>
+</UserPref>
+
+
+<UserPref name="showMonths2" display_name="Show months" datatype="bool" default_value="true"/>
+<UserPref name="showWeeks2" display_name="Show weeks" datatype="bool" default_value="true"/>
+<UserPref name="showDays2" display_name="Show days" datatype="bool" default_value="true"/>
+<UserPref name="showHours2" display_name="Show hours" datatype="bool" default_value="true"/>
+<UserPref name="showMinutes2" display_name="Show minutes" datatype="bool" default_value="true"/>
+<UserPref name="showSeconds2" display_name="Show seconds" datatype="bool" default_value="true"/>
+
+<Content type="html"><![CDATA[
+<style>
+	
+	div h1, div h2 {
+		font-family: Crimson;
+		font-size: 2em;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+    color: #993366;
+	}
+
+  .eventer {
+		padding-top:15px;
+    color: #019DCD;
+    font-size: 9pt;
+    font-family: Arial;
+    margin-right: 20px;
+	}
+  .gruper  {
+  float: left;
+  margin-top: 10px;
+  margin-right: 100px;
+
+  }
+	
+	div h2 {
+		font-size: .75em;
+		color: #993366;
+	}
+  span h1, span h2{
+  display: inline;
+}
+
+.center-margin{
+margin-left:25%;
+margin-right:15%;
+}
+</style>
+<script type="text/javascript">
+  var prefs = new _IG_Prefs();
+	var eventYear = prefs.getInt("event_year");
+  var eventYear2 = prefs.getInt("event_year2");
+
+	var eventMonth = prefs.getInt("event_month");
+  var eventMonth2 = prefs.getInt("event_month2");
+
+	var eventDay = prefs.getInt("event_day");
+  var eventDay2 = prefs.getInt("event_day2");
+
+	var eventHour = prefs.getInt("event_hour");
+  var eventHour2 = prefs.getInt("event_hour2");
+
+	var eventMinute = prefs.getInt("event_minute");
+  var eventMinute2 = prefs.getInt("event_minute2");
+
+  var eventName = prefs.getString('event');
+  var eventName2 = prefs.getString('event2');
+ 
+	
+	var eventDate = new Date(eventYear, eventMonth, eventDay, eventHour, eventMinute, 0);
+  var eventDate2 = new Date(eventYear2,eventMonth2,eventDay2,eventHour2,eventMinute2,0);
+
+	var nowDate = new Date();
+	var remainingSeconds = Math.ceil((eventDate.getTime() - nowDate.getTime()) / 1000);
+  var remainingSeconds2 = Math.ceil((eventDate.getTime() - nowDate.getTime()) / 1000);
+
+	var monthNum, monthTitle;
+
+	var weekNum, weekTitle;
+	var dayNum, dayTitle;
+	var hourNum, hourTitle;
+	var minuteNum, minuteTitle;
+	var secondNum, secondTitle;
+
+  var monthNum2, monthTitle2;
+
+	var weekNum2, weekTitle2;
+	var dayNum2, dayTitle2;
+	var hourNum2, hourTitle2;
+	var minuteNum2, minuteTitle2;
+	var secondNum2, secondTitle2;
+	
+     
+
+	function init()
+	{
+      
+    eventCountdownName =  document.getElementById('eventName').getElementsByTagName('h2')[0];
+    eventCountdownName.innerHTML = eventName; 
+  eventCountdownName2 =  document.getElementById('eventName2').getElementsByTagName('h2')[0];
+    eventCountdownName2.innerHTML = eventName2; 
+
+		monthNum = document.getElementById('month').getElementsByTagName('h1')[0];
+		monthTitle = document.getElementById('month').getElementsByTagName('h2')[0];
+    	monthNum2 = document.getElementById('month2').getElementsByTagName('h1')[0];
+		monthTitle2 = document.getElementById('month2').getElementsByTagName('h2')[0];
+
+		weekNum = document.getElementById('week').getElementsByTagName('h1')[0];
+		weekTitle = document.getElementById('week').getElementsByTagName('h2')[0];	
+    	weekNum2 = document.getElementById('week2').getElementsByTagName('h1')[0];
+		weekTitle2 = document.getElementById('week2').getElementsByTagName('h2')[0];	
+if(__UP_showMonths__ == false) {
+document.getElementById('month').style.display = 'none';
+}
+if(__UP_showWeeks__ == false) {
+			document.getElementById('week').style.display = 'none';    }
+ if(__UP_showDays__ == false) {
+  document.getElementById('day').style.display = 'none';
+}
+ if(__UP_showHours__ == false) {
+ document.getElementById('hour').style.display = 'none';
+}
+ if(__UP_showMinutes__ == false) {
+  document.getElementById('minute').style.display = 'none';
+}
+ if(__UP_showSeconds__ == false) {
+  document.getElementById('second').style.display = 'none';
+}
+
+
+if(__UP_showMonths2__ == false) {
+document.getElementById('month2').style.display = 'none';
+}
+if(__UP_showWeeks2__ == false) {
+			document.getElementById('week2').style.display = 'none';    }
+ if(__UP_showDays2__ == false) {
+  document.getElementById('day2').style.display = 'none';
+}
+ if(__UP_showHours2__ == false) {
+ document.getElementById('hour2').style.display = 'none';
+}
+ if(__UP_showMinutes2__ == false) {
+  document.getElementById('minute2').style.display = 'none';
+}
+ if(__UP_showSeconds2__ == false) {
+  document.getElementById('second2').style.display = 'none';
+}
+
+		dayNum = document.getElementById('day').getElementsByTagName('h1')[0];
+		dayTitle = document.getElementById('day').getElementsByTagName('h2')[0];
+    	dayNum2 = document.getElementById('day2').getElementsByTagName('h1')[0];
+		dayTitle2 = document.getElementById('day2').getElementsByTagName('h2')[0];
+		
+		hourNum = document.getElementById('hour').getElementsByTagName('h1')[0];
+		hourTitle = document.getElementById('hour').getElementsByTagName('h2')[0];
+    	hourNum2 = document.getElementById('hour2').getElementsByTagName('h1')[0];
+		hourTitle2 = document.getElementById('hour2').getElementsByTagName('h2')[0];
+		
+		minuteNum = document.getElementById('minute').getElementsByTagName('h1')[0];
+		minuteTitle = document.getElementById('minute').getElementsByTagName('h2')[0];
+    	minuteNum2 = document.getElementById('minute2').getElementsByTagName('h1')[0];
+		minuteTitle2 = document.getElementById('minute2').getElementsByTagName('h2')[0];
+		
+		secondNum = document.getElementById('second').getElementsByTagName('h1')[0];
+		secondTitle = document.getElementById('second').getElementsByTagName('h2')[0];
+    	secondNum2 = document.getElementById('second2').getElementsByTagName('h1')[0];
+		secondTitle2 = document.getElementById('second2').getElementsByTagName('h2')[0];
+		
+            
+		setInterval("update_countdown()", 250);
+	}
+  
+	function update_countdown() {
+		remainingSeconds -= .25;
+    remainingSeconds2 -=.25;
+		var tmpSeconds = remainingSeconds;
+    var tmpSeconds2 = remainingSeconds2;
+
+			weeksTime = 86400*7;
+
+			remainingMonths = Math.max(0,Math.floor(tmpSeconds / (weeksTime*4)));
+			tmpSeconds -= remainingMonths * 4 * weeksTime;
+      monthNum.innerHTML = remainingMonths;
+      monthTitle.innerHTML = remainingMonths == 1 ? 'month' : 'months'
+
+      remainingMonths2 = Math.max(0,Math.floor(tmpSeconds2 / (weeksTime*4)));
+			tmpSeconds2 -= remainingMonths2 * 4 * weeksTime;
+      monthNum2.innerHTML = remainingMonths2;
+	monthTitle2.innerHTML = remainingMonths2 == 1 ? 'month' : 'months'
+
+			remainingWeeks = Math.max(0, Math.floor(tmpSeconds / (weeksTime)));
+			tmpSeconds -= remainingWeeks * weeksTime;
+			weekNum.innerHTML = remainingWeeks;
+      weekTitle.innerHTML = remainingWeeks == 1 ? 'week' : 'weeks'
+
+      remainingWeeks2 = Math.max(0, Math.floor(tmpSeconds2 / (weeksTime)));
+      tmpSeconds2 -= remainingWeeks2 * weeksTime;
+      weekNum2.innerHTML = remainingWeeks2;
+      weekTitle2.innerHTML = remainingWeeks2 == 1 ? 'week' : 'weeks'
+		
+		
+		remainingDays = Math.max(0, Math.floor(tmpSeconds / 86400));
+		tmpSeconds -= remainingDays * 86400;
+		dayNum.innerHTML = remainingDays;
+    dayTitle.innerHTML = remainingDays == 1 ? 'day' : 'days'
+
+remainingDays2 = 	Math.max(0, Math.floor(tmpSeconds2 / 86400));
+	tmpSeconds2 -= remainingDays2 * 86400;
+    	dayNum2.innerHTML = remainingDays2;
+    	dayTitle2.innerHTML = remainingDays2 == 1 ? 'day' : 'days'
+		
+		remainingHours = Math.max(0, Math.floor(tmpSeconds / 3600));
+		tmpSeconds -= remainingHours * 3600;
+		hourNum.innerHTML = remainingHours;
+    hourTitle.innerHTML = remainingHours == 1 ? 'hour' : 'hours'
+
+	remainingHours2 = Math.max(0, Math.floor(tmpSeconds2 / 3600));
+		tmpSeconds2 -= remainingHours2 * 3600;
+    hourNum2.innerHTML = remainingHours2;
+    hourTitle2.innerHTML = remainingHours2 == 1 ? 'hour' : 'hours'
+		
+		remainingMinutes = Math.max(0, Math.floor(tmpSeconds / 60));
+		tmpSeconds -= remainingMinutes * 60;
+    minuteNum.innerHTML = remainingMinutes;
+    minuteTitle.innerHTML = remainingMinutes == 1 ? 'minute' : 'minutes'
+
+    remainingMinutes2 = Math.max(0, Math.floor(tmpSeconds2 / 60));
+		tmpSeconds2 -= remainingMinutes2 * 60;
+		minuteNum2.innerHTML = remainingMinutes2;
+    minuteTitle2.innerHTML = remainingMinutes2 == 1 ? 'minute' : 'minutes'
+		
+	
+		tmpSeconds = Math.max(0, Math.floor(tmpSeconds));
+		secondNum.innerHTML = tmpSeconds;
+    secondTitle.innerHTML = tmpSeconds == 1 ? 'second' : 'seconds';
+
+    tmpSeconds2 = Math.max(0,Math.floor(tmpSeconds2));
+    secondNum2.innerHTML = tmpSeconds2;
+	 	secondTitle2.innerHTML = tmpSeconds2 == 1 ? 'second' : 'seconds';
+ 
+		if(Math.floor(tmpSeconds) % 5 == 0) {
+			eventDate = new Date(eventYear, eventMonth, eventDay, eventHour, eventMinute, 0);
+			nowDate = new Date();
+			remainingSeconds = Math.ceil((eventDate.getTime() - nowDate.getTime()) / 1000);
+		}
+    	if(Math.floor(tmpSeconds2) % 5 == 0) {
+			eventDate = new Date(eventYear2, eventMonth2, eventDay2, eventHour2, eventMinute2, 0);
+			nowDate = new Date();
+			remainingSeconds2 = Math.ceil((eventDate.getTime() - nowDate.getTime()) / 1000);
+		}
+	}
+</script>
+<div class="center-margin">
+    <div class="gruper">
+          <span id="eventName" >
+          <h2 class="eventer">&nbsp;</h2>
+          </span>
+          <span id="month">
+            <h1>&nbsp;</h1>
+            <h2>months</h2>
+          </span>
+          <span id="week">
+            <h1>&nbsp;</h1>
+            <h2>weeks</h2>
+          </span>
+
+          <span id="day">
+            <h1>&nbsp;</h1>
+            <h2>days</h2>
+          </span>
+
+          <span id="hour">
+            <h1>&nbsp;</h1>
+            <h2>hours</h2>
+          </span>
+
+          <span id="minute">
+            <h1>&nbsp;</h1>
+            <h2>minutes</h2>
+          </span>
+
+          <span id="second">
+            <h1>&nbsp;</h1>
+            <h2>seconds</h2>
+          </span>
+    </div>
+
+    <div class="gruper">
+            <span id="eventName2">
+            <h2 class="eventer">&nbsp;</h2>
+            </span>
+            <span id="month2"  >
+              <h1>&nbsp;</h1>
+              <h2>months</h2>
+            </span>
+            <span id="week2" >
+              <h1>&nbsp;</h1>
+              <h2>weeks</h2>
+            </span>
+
+            <span id="day2"  >
+              <h1>&nbsp;</h1>
+              <h2>days</h2>
+            </span>
+
+            <span id="hour2" >
+              <h1>&nbsp;</h1>
+              <h2>hours</h2>
+            </span>
+
+            <span id="minute2" >
+              <h1>&nbsp;</h1>
+              <h2>minutes</h2>
+            </span>
+
+            <span id="second2" >
+              <h1>&nbsp;</h1>
+              <h2>seconds</h2>
+            </span>
+    </div>
+</div>
+<script type="text/javascript">
+init();
+
+</script>
+
+]]></Content>
+</Module>
