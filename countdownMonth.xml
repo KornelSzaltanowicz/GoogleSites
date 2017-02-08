@@ -451,7 +451,6 @@
 
 .center-margin{
   margin: auto;  
-  width: 90%;
   height: 100%;
 }
 .container {
