@@ -453,10 +453,13 @@
 
 .center-margin{
   margin: auto;  
+  width: 90%;
+  height: 100%;
 }
 .container {
   width: 100%;
-  margin-top: 10px;
+  height: 100%;
+  margin-top: 20px;
   text-align: center;
 }
 </style>
