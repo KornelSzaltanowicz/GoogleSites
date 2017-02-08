@@ -444,6 +444,8 @@
 
 .center-margin{
   width: 80%;
+  overflow: auto;
+  margin: auto;  
 }
 .container {
   width: 100%;
