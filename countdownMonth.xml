@@ -427,11 +427,14 @@
     font-family: Arial;
     margin-right: 20px;
 	}
-  .gruper  {
-  float: left;
-  margin-top: 10px;
-  margin-right: 100px;
+  #first-counter  {
+    float: left;
+    margin-right: 20px;
+  }
 
+  #second-counter  {
+    float: right;
+    margin-left: 20px;
   }
 	
 	div h2 {
@@ -449,6 +452,7 @@
 }
 .container {
   width: 100%;
+  margin-top: 10px;
   text-align: center;
 }
 </style>
@@ -658,7 +662,7 @@ remainingDays2 = 	Math.max(0, Math.floor(tmpSeconds2 / 86400));
 </script>
 <div class="container">
 <div class="center-margin">
-    <div class="gruper">
+    <div id="first-counter">
           <span id="eventName" >
           <h2 class="eventer">&nbsp;</h2>
           </span>
@@ -692,7 +696,7 @@ remainingDays2 = 	Math.max(0, Math.floor(tmpSeconds2 / 86400));
           </span>
     </div>
 
-    <div class="gruper">
+    <div id="second-counter">
             <span id="eventName2">
             <h2 class="eventer">&nbsp;</h2>
             </span>
