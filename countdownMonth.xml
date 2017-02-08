@@ -431,11 +431,6 @@
     float: left;
     margin-right: 20px;
   }
-
-  #second-counter  {
-    float: right;
-    margin-left: 20px;
-  }
 	
 	div h2 {
 		font-size: .75em;
