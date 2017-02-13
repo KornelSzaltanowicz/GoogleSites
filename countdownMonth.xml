@@ -426,7 +426,7 @@
   .eventer {
 		padding-top:15px;
     color: #019DCD;
-    font-size: 9pt;
+    font-size: 11pt;
     font-family: Arial;
     margin-right: 5px;
 	}
