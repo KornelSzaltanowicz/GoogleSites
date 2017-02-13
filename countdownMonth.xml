@@ -433,7 +433,6 @@
 
   #first-counter  {
   display: inline-block;
-    margin-right: 30px;
   }
 
   #second-counter {
