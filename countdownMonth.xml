@@ -425,7 +425,7 @@
 
   .eventer {
 		padding-top:15px;
-    color: #019DCD;
+    color: #800080;
     font-size: 11pt;
     font-family: Arial;
     margin-right: 5px;
@@ -442,7 +442,6 @@
 	
 	div h2 {
 		font-size: .75em;
-		color: #993366;
 	}
   span h1, span h2{
   display: inline;
