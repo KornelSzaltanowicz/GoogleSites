@@ -416,7 +416,7 @@
 		text-align: center;
 		margin: 0;
 		padding: 0;
-    color: #800080;
+    color: #ff7f00;
 	}
 
   div h1 {
@@ -425,14 +425,14 @@
 
   .eventer {
 		padding-top:15px;
-    color: #019DCD;
-    font-size: 11pt;
-    font-family: Arial;
-    margin-right: 5px;
+		color: #0082da;
+		font-size: 13pt;
+		font-family: Arial;
+		margin-right: 5px;
 	}
 
   #first-counter  {
-  display: inline-block;
+		display: inline-block;
   }
 
   #second-counter {
