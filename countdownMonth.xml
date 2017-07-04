@@ -420,27 +420,31 @@
 	}
 
   div h1 {
-	font-size: 1.2em;
+	font-size: 1.7em;
   }
 
   .eventer {
 		padding-top:15px;
 		color: #0082da;
-		font-size: 1.2em;
+		font-size: 1.7em;
 		font-family: Imago;
 	}
 
   #first-counter  {
 		display: inline-block;
+		position: absolute;
+		left: 0;
   }
 
   #second-counter {
-  display: inline-block;
+	display: inline-block;
+	position: absolute;
+	right: 0;
     margin-left: 15px;
   }
 	
 	div h2 {
-		font-size: 1.2em;
+		font-size: 1.7em;
 	}
   span h1, span h2{
   display: inline;
