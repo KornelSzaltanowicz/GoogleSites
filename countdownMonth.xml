@@ -420,15 +420,14 @@
 	}
 
   div h1 {
-	font-size: 1.5em;
+	font-size: 1.2em;
   }
 
   .eventer {
 		padding-top:15px;
 		color: #0082da;
-		font-size: 18pt;
+		font-size: 1.2em;
 		font-family: Imago;
-		margin-right: 5px;
 	}
 
   #first-counter  {
@@ -437,7 +436,7 @@
 
   #second-counter {
   display: inline-block;
-    margin-left: 20px;
+    margin-left: 15px;
   }
 	
 	div h2 {
