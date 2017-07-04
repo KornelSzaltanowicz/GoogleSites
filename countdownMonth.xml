@@ -421,7 +421,7 @@
 
   div h1,
 	div h2{
-	font-size: 1.9em;
+	font-size: 1.8em;
   }
 
   .eventer {
