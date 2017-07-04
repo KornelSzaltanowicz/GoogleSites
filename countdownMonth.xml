@@ -412,22 +412,22 @@
 <style>
 	
 	div h1, div h2 {
-		font-family: Crimson;
+		font-family: Imago;
 		text-align: center;
 		margin: 0;
 		padding: 0;
-    color: #ff7f00;
+		color: #ff7f00;
 	}
 
   div h1 {
-  font-size: 1.5em;
+	font-size: 1.8em;
   }
 
   .eventer {
 		padding-top:15px;
 		color: #0082da;
-		font-size: 13pt;
-		font-family: Arial;
+		font-size: 20pt;
+		font-family: Imago;
 		margin-right: 5px;
 	}
 
