@@ -420,13 +420,13 @@
 	}
 
   div h1 {
-	font-size: 1.8em;
+	font-size: 1.5em;
   }
 
   .eventer {
 		padding-top:15px;
 		color: #0082da;
-		font-size: 20pt;
+		font-size: 18pt;
 		font-family: Imago;
 		margin-right: 5px;
 	}
@@ -441,7 +441,7 @@
   }
 	
 	div h2 {
-		font-size: .75em;
+		font-size: 1.2em;
 	}
   span h1, span h2{
   display: inline;
